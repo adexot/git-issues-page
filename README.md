@@ -1,2 +1,2 @@
 # foodapp
-A simple page for a foodapp
+A page for a github-pocket project

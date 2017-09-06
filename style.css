@@ -1,104 +1,160 @@
+/*Custom style for the page */
 *{
     box-sizing: border-box;
+}
+a{
+    color: #000;
 }
 a:hover{
     text-decoration: none;
 }
 body{
-    font-family: 'Raleway';
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
 }
-/*Custom style for the page */
-.alert {
-  padding: 10px 30px;
-  margin-bottom: 0;
-  border-radius: 0;
+.fa{
+    font-size: 0.7em;
 }
-.alert-custom{
-    background-color: #000;
-    color: #fff;
-    font-size: 1em;
+/*Navbar style */
+.navbar-header{
+    width: 15%;
+    background-color: #f5f5f5;
 }
-.close{
-    color: #fff;
+.navbar-default{
+  border-color: #fff;
+  background-color: #fff;
 }
-
-/*Header section   */
-header{
-    width: 100%;
-    text-align: center;
-}
-
-header .logo__name{
-    font-size: 6em;
-    letter-spacing: 10px;
-    font-weight: bold;
-    line-height: 100px;
-    vertical-align: middle;
+.navbar-nav li{
+    padding-left: 20px;
+    padding-right: 20px;
     color: #000;
+    font-weight: bold;
+    position: relative;
 }
-@media (max-width: 500px){
-    header .logo__name{
-        font-size: 4em;
-        line-height: 100px;
-    }
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: #fff;
+    color: #f00;
 }
-header .tagline{
-    font-size: 1.2em;
-    letter-spacing: 8px;
+.navbar-nav li.active:after{
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: #f5f5f5;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -5px;
+    left: 47%;
 }
-
-/*Shop Area section  */
-#shop-area{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.navbar-form input[type=text]{
+    border: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
 }
-#shop-area .row{
-    border-top: 1px solid #eee;
-    padding-top: 20px;
-    padding-bottom: 20px;
+/*Aside style */
+aside{
+    width:15%;
+    height: 100vh;
+    position: fixed;
+    background-color: #fff;
+    left: 20%;
+    margin-left: -20%;
+    z-index: 1000;
+    padding-top: 50px;
 }
-#shop-area .shop-image img{
-    width: 100%;
-    border-radius: 5px;
+aside .user-box{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-#shop-area ul{
+aside .user-box img{
+    border-radius: 50%;
+}
+.user-box .fa-circle{
+    font-size: 0.3em;
+}
+aside ul{
     list-style-type: none;
-    margin-bottom: 20px;
 }
-#shop-area ul li{
+aside ul hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    border-top: 1px solid #aaa;
+}
+aside ul li{
     line-height: 40px;
     vertical-align: middle;
-    font-size: 1.2em;
-}
-#shop-area a{
-    padding: 10px 15px;
-    border: 2px solid #000;
     color: #000;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
 }
-#shop-area a:hover{
-    padding: 10px 15px;
-    border: 2px solid #000;
-    background-color: #000;
-    color: #fff;
+aside ul li:hover{
+    background-color: #e8f5e9;
+    border-left: 3px solid red;
 }
-/*Footer Section  */
-footer{
-    text-align: center;
+aside ul li.a-active:after{
+    content: "";
+    height: 30px;
+    width: 30px;
+    background-color: #f5f5f5;
+    transform: rotate(45deg);
+    right: -17px;
+    top: 5px;
+    position: absolute;
+}
+aside ul li i{
+    margin-right: 10px;
+}
+/*Main style */
+main{
+    position: relative;
+    left: 15%;
+    width: 85%;
+    margin-right: 0;
     padding-top: 50px;
-    padding-bottom: 50px;
 }
-footer ul{
+.main-content{
+    max-width: 1000px;
+}
+.container-fluid header{
+    border-bottom: 1px solid #aaa;
+    height: 60px;
+    padding: 20px 0;
+    vertical-align: middle;
+}
+.container-fluid header span{
+    font-size: 2em;
+}
+.container-fluid header ul{
+    list-style-type: none;
+}
+.container-fluid header ul li{
     display: inline-block;
+    padding: 0 10px;
 }
-footer ul li{
-    display: inline-block;
-    padding: 10px 20px;
+.container-fluid header ul li button{
+    border: 0;
+    border-radius: 5px;
+    background-color: #f00;
+    color: #fff;
+    padding: 5px 10px;
 }
-footer h5{
-    color: #ccc;
+.container-fluid header ul li .fa{
+    font-size: 1em;
+    color: #aaa;
+}
+.issue-box{
+    height: 300px;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    border-top: 3px solid #f00;
+    -moz-box-shadow: 3px 3px 3px #ccc;
+    -webkit-box-shadow: 3px 3px 3px #ccc;
+    box-shadow: 0px 0px 10px #aaa;
+    z-index: 9999;
 }
 
 /* Browser fixes */
@@ -110,4 +166,10 @@ ul, menu, dir {
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px;
+}
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }

@@ -1,98 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Food-app</title>
+    <title>Github Pocket</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="description" content="">
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
     <div class="main">
-        <div class="alert alert-custom alert-dismissable">
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            Looking for a place to eat today
-        </div>
-        <header>
-            <span class="logo__name">FOOD APP</span>
-            <br>
-            <span class="tagline">Never Stay Hungry</span>
-        </header>
-        
-        <section id="shop-area" class="container">
-            <h4>Welcome to FOOD APP, go through our list of available shops</h4>
-            <div class="row">
-                <div class="col-md-6 shop-image">
-                    <img src="shop.jpg" alt="shop-image">
-                </div>
-                <div class="col-md-6">
-                    <h3 data-toggle="tooltip" data-placement="bottom" title="44,lead city,VI,Lagos">Grace Catering and Baking</h3>
-                    <ul>
-                        <li>Jollof Rice, Mince Pie</li>
-                        <li>Nigeria</li>
-                        <li>Catering, Bakery</li>
-                        <li>Delivery, Pick up</li>
-                        <li>$30 - $50</li>
-                        <li>+2348134454234</li>
-                    </ul>
-                    <a href="#">View menu</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 shop-image">
-                    <img src="shop.jpg" alt="shop-image">
-                </div>
-                <div class="col-md-6">
-                    <h3 data-toggle="tooltip" data-placement="bottom" title="44,lead city,VI,Lagos">Grace Catering and Baking</h3>
-                    <ul>
-                        <li>Jollof Rice, Mince Pie</li>
-                        <li>Nigeria</li>
-                        <li>Catering, Bakery</li>
-                        <li>Delivery, Pick up</li>
-                        <li>$30 - $50</li>
-                        <li>+2348134454234</li>
-                    </ul>
-                    <a href="#">View menu</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 shop-image">
-                    <img src="shop.jpg" alt="shop-image">
-                </div>
-                <div class="col-md-6">
-                    <h3 data-toggle="tooltip" data-placement="bottom" title="44,lead city,VI,Lagos">Grace Catering and Baking</h3>
-                    <ul>
-                        <li>Jollof Rice, Mince Pie</li>
-                        <li>Nigeria</li>
-                        <li>Catering, Bakery</li>
-                        <li>Delivery, Pick up</li>
-                        <li>$30 - $50</li>
-                        <li>+2348134454234</li>
-                    </ul>
-                    <a href="#">View menu</a>
-                </div>
-            </div>
-        </section>
-        
-        <footer>
-                <ul>
-                    <li><a href="#">facebook</a></li>
-                    <li><a href="#">twitter</a></li>
-                    <li><a href="#">instagram</a></li>
-                    <li><a href="#">google plus</a></li>
-                </ul>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
 
-                <h5>&copy; 2017 Food App.  All Rights Reserved.</h5>
-        </footer>
+                    <!-- Collapsed Hamburger -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Branding Image -->
+                    <a class="navbar-brand" href="/">
+                        pocket
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="nav navbar-nav navbar-center" id="navbar-links">
+                        <li class="active"><a href="#" data-text="home">Home</a></li>
+                        <li ><a href="#" data-text="recommend">Recommend</a></li>
+                        <li><a href="#" data-text="explore">Explore <i class="fa fa-chevron-right"></i></a></li>
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <form class="nav navbar-form navbar-right">
+                        <input type="text" class="form-control" name="" placeholder="Search for anything">
+                    </form>
+                </div>
+            </div>
+
+        </nav>
+        <aside>
+           <div class="user-box">
+               <img src="user.png" height="50" width="50" alt="">
+               <h4>JayKayDre</h4>
+               <h6>UI Designer <i class="fa fa-circle"></i> Nigeria <i class="fa fa-chevron-down"></i></h6>
+           </div>
+            <ul>
+                <li class="a-active"><a href="#"><i class="fa fa-list"></i>My List</a></li>
+                <li><a href="#"><i class="fa fa-heart"></i>Favourite</a></li>
+                <li><a href="#"><i class="fa fa-book"></i>Archive</a></li>
+                <hr>
+                <li><a href="#"><i class="fa fa-book"></i>Articles</a></li>
+                <li><a href="#"><i class="fa fa-video-camera"></i>Videos</a></li>
+                <li><a href="#"><i class="fa fa-picture-o"></i>Images</a></li>
+                <li><a href="#"><i class="fa fa-tag"></i>Tags</a></li>
+            </ul>
+        </aside>
+        <main>
+            <div class="container-fluid main-content">
+                <header>
+                    <span class="">My List</span>
+                     <ul class="pull-right">
+                        <li><button>&plus; Add to pocket</button></li>
+                        <li><i class="fa fa-list"></i></li>
+                        <li><i class="fa fa-pencil"></i></li>
+                    </ul> 
+                </header>
+
+                <section>
+                    <div class="col-md-4">
+                        <div class="issue-box">
+                            <div class="issue-title"></div>
+                            <div class="issue-body"></div>
+                            <div class="issue-tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="issue-box"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="issue-box"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="issue-box"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="issue-box"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="issue-box"></div>
+                    </div>
+                </section>  
+            </div>
+        </main>
     </div>
 <script src="jquery.min.js"></script>
 <script src="bootstrap.js"></script>
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-});
-</script>
 </body>
 </html>
