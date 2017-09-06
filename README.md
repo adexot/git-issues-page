@@ -1,2 +1,2 @@
-# foodapp
-A page for a github-issue project
+# Git-Issues
+A page for a github-issues project
